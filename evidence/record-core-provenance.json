@@ -1,0 +1,92 @@
+{
+  "source_project": "EvtxRecordReview",
+  "source_commit": "c6b12c0497ee9e28d71c1322c5c01790011732f2",
+  "upstream_research": "williballenthin/python-evtx@1edde3655c676bd44990ce9762d6b8f73334ed1d",
+  "runtime_copy_files": [
+    {
+      "source": "src/evtx_record_review/__init__.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/__init__.py",
+      "sha256": "e905e4f57b76d3cdb0b554350fc95267ddcbdec10f0b6baabe4cba4877d1304b",
+      "bytes": 193,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/__main__.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "bytes": 48,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/binary.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/binary.py",
+      "sha256": "ebdf87e0d03debf658ea57efda88d1e1cb5c80a8118d082b057f53df7aa2a110",
+      "bytes": 2494,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/binxml.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/binxml.py",
+      "sha256": "51e5c91f5aeb4665ba56abf744a304cae480abccd24decd1dc0916ddfcc18a07",
+      "bytes": 17665,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/cli.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/cli.py",
+      "sha256": "2151af4a30ba9eb5b6638e51729550909a5e947faf523afe6ae93d8c111c951a",
+      "bytes": 2143,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/contracts.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/contracts.py",
+      "sha256": "f9714447e0bfcd4bbc987332978ad884f65ae4e182524a42323b10197d533b62",
+      "bytes": 5742,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/files.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/files.py",
+      "sha256": "729d79db1cb36321d0e1324a17a8d4ddb6daad734b10e2bde2b70d5ac1e3cc99",
+      "bytes": 2262,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/projection.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/projection.py",
+      "sha256": "67ab1d3353f345aa29c3b401b7b0fe20b3743d41834cf22deb6e27f7692ae509",
+      "bytes": 5346,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/review.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/review.py",
+      "sha256": "470553a0d08548616128072c4ae86c1e065d5baac31770b27b37ba4cae19c69f",
+      "bytes": 10536,
+      "copy": "EXACT_ALL_BYTES"
+    },
+    {
+      "source": "src/evtx_record_review/values.py",
+      "copied_to": "src/evtx_recovery_review/_record_core/values.py",
+      "sha256": "f1bd26be7d92d4ef945bd6ed421df1da82fb56b9a4a60740b88cb0d7a4bc4f70",
+      "bytes": 5966,
+      "copy": "EXACT_ALL_BYTES"
+    }
+  ],
+  "required_native_gate": {
+    "status": "PASS_PARENT_OBSERVED_EXACT_COMMIT_CI",
+    "run": 37025713841,
+    "url": "https://github.com/dhtfish-98/EvtxRecordReview/actions/runs/37025713841",
+    "scope": "two fixed offline corpus files; finite Event/System numeric facts,identity,time. Full renderer equivalence OPEN",
+    "evidence_file": "record-core-native.json",
+    "evidence_sha256": "0436779bfc7a817b913aa8f1f911710b4b93a7956025f4853d438c5ffae5a3a7",
+    "records": 1602,
+    "numeric_facts": 9496,
+    "mismatches": 0,
+    "runtime_module_hashes_sha256": "21a7648d92ee83824000b413417555b16327343140011e8b9f9b2c64e3c5336b",
+    "product_status": "OPEN",
+    "raw_header_System_domain_mismatch_issue38": "OPEN_preserved_unchanged"
+  },
+  "attribution": "Complete previously fully reviewed independently written Codex-assisted decoder copied without byte changes; not invented anew in this recovery project. Apache authors and full licenses retained."
+}

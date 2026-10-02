@@ -1,0 +1,8 @@
+include README.md ORIGIN.md DEFENSIVE_SCOPE.md VALIDATION.md NOTICE LICENSE
+include pyproject.toml requirements-build.txt .gitattributes .gitignore
+recursive-include licenses *.txt
+recursive-include evidence *.json
+recursive-include tests *.py
+recursive-include tools *.py
+recursive-include .github *.yml
+recursive-exclude * __pycache__ *.pyc

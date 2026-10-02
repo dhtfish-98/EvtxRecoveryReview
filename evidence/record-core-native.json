@@ -1,0 +1,57 @@
+{
+  "artifact_identity": {
+    "built_wheel_sha256": "fb6901e974562f999a15b7c834c14987b3fe2cb298e52c679435d8dc09f78592",
+    "installed_version": "0.1.0",
+    "installed_wheel_metadata_bytes": 5814,
+    "installed_wheel_metadata_sha256": "eb82de27bec97c72410fa5b5814deb0dab25db88d5ac5a68b50bbeef631d7104",
+    "modules_compared": 10,
+    "runtime_module_hashes_sha256": "21a7648d92ee83824000b413417555b16327343140011e8b9f9b2c64e3c5336b",
+    "source_review_sha256": "1fa09bfeb7b829d198748b22b0cf7b1016230a62cb096c18291245d1c038af80",
+    "source_wheel_installed": "IDENTICAL"
+  },
+  "oracle": "Windows EventLogReader FilePath ToXml numeric-only export",
+  "result": "PASS",
+  "results": [
+    {
+      "canonical_numeric_identity_sha256": "722a7b7e3c277a0f61e2280d7f53238cc30be94a6014af5d0226c76008889973",
+      "fixture": "system.evtx",
+      "input_sha256": "ccb83cfefc9038017224cd97b800b66e248fe14529649ddf47907e5a2021449e",
+      "input_unchanged": true,
+      "mismatches": 0,
+      "native_record_ids_and_FILETIME_equal": true,
+      "numeric_facts": 9490,
+      "product_complete": false,
+      "product_status": "OPEN",
+      "raw_record_header_vs_event_System": {
+        "FILETIME_differences": 0,
+        "identifier_differences": 0,
+        "raw_record_header_fields_preserved": true,
+        "records": 1601,
+        "relationship": "Distinct field domains; disagreement is retained, not repaired or assumed corruption.",
+        "status": "PASS_OBSERVED_EQUALITY"
+      },
+      "records": 1601
+    },
+    {
+      "canonical_numeric_identity_sha256": "2c53099172f7535d29284b0bb2823bf6c9420f91fbbcb56047943c8ce0e4dac3",
+      "fixture": "issue_38.evtx",
+      "input_sha256": "becab64455866f8fae5583fbaa5dab901115e4397ea7abe14f37ad732d5d7eb9",
+      "input_unchanged": true,
+      "mismatches": 0,
+      "native_record_ids_and_FILETIME_equal": true,
+      "numeric_facts": 6,
+      "product_complete": false,
+      "product_status": "OPEN",
+      "raw_record_header_vs_event_System": {
+        "FILETIME_differences": 1,
+        "identifier_differences": 1,
+        "raw_record_header_fields_preserved": true,
+        "records": 1,
+        "relationship": "Distinct field domains; disagreement is retained, not repaired or assumed corruption.",
+        "status": "OPEN"
+      },
+      "records": 1
+    }
+  ],
+  "upstream_commit": "1edde3655c676bd44990ce9762d6b8f73334ed1d"
+}

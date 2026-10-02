@@ -1,0 +1,151 @@
+{
+  "application_eligibility": "OPEN",
+  "core_acceptance_gate": {
+    "CI_run": 37025713841,
+    "project": "EvtxRecordReview",
+    "reason": "Parent accepted final10core source hashes after full review, source/consumer and native Windows numeric validation.",
+    "record_commit": "c6b12c0497ee9e28d71c1322c5c01790011732f2",
+    "state": "PASS_PARENT_OBSERVED_EXACT_COMMIT_CI"
+  },
+  "license": {
+    "full_text_read": true,
+    "identifier": "Apache-2.0",
+    "path": "LICENSE.TXT",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "planned_contract": {
+    "budget": "Input, candidate/chunk/record counts, decoding tokens/references/depth/bytes, template matches, overlaps, retained output, and total report size are bounded; exceeded or unsupported coverage is OPEN, never clean.",
+    "candidate_validation": [
+      "Full image magic only generates candidates; bounded chunk header/data CRC and allocated record walk establish local context.",
+      "Record dual size, length, alignment, actual bounds, timestamp and BinXML/substitution grammar validate candidates.",
+      "Resident-template parsing derives chunk-coordinate hypothesis from declared relative pointer; absent original context remains UNVERIFIED.",
+      "Candidate overlap, duplicate content and truncation are separately reported, without asserting original event identity."
+    ],
+    "input": "Bounded immutable local regular file byte image; no devices, live collection, URLs, stdin or runtime network. No archive decompression/member traversal; raw bytes, including container bytes, are treated only as the physical image. Path reader rejects symlink components and traversal, platform support is gated.",
+    "output": "Privacy-default bounded JSON provenance and numeric facts; explicit selected-field disclosure. Optional bounded XML reconstruction clearly inferred and correctly XML-escaped, without generic input XML parsing or log rewriting.",
+    "removed": [
+      "Device or live memory collection",
+      "Input execution/import/message DLL loading",
+      "Remote template retrieval",
+      "lxml XML interpretation and regex XML substitution",
+      "Log writing/rewriting",
+      "Hardcoded EventID slot3 and floating point FILETIME conversions"
+    ],
+    "template_matching": [
+      "Collect complete typed template AST and all source offsets/GUID/instance identifiers, without XML regex substitution or hardcoded EventID substitution index.",
+      "Match every referenced slot and dependency against actual typed substitution constraints; retain distinct ASTs even with equal type signatures.",
+      "No match INCOMPLETE; one distinct template RECOVERED_INFERRED; multiple AMBIGUOUS. Unique inference never proves original event identity.",
+      "Catalog entries from bad CRC contexts are retained as untrusted; provenance travels with each candidate."
+    ]
+  },
+  "project": "EvtxRecoveryReview",
+  "review_notes": [
+    "Original resident-template heuristic only probes substitution count/types; new implementation must enumerate validated grammar hypotheses.",
+    "Original template constraints collapse same type signatures and use XML regex substitution; new directory must retain AST identity and all source origins.",
+    "Original orphan records may be skipped via broad exception paths; new output must retain budget/unsupported/truncated diagnostics."
+  ],
+  "runtime_written": true,
+  "schema_version": 1,
+  "upstream": {
+    "all_repository_blobs": 16,
+    "commit": "0895be4c25125b5d087cc1c51b601e2852a67b85",
+    "coverage_statement": "All downloaded selected runtime, CLI, package entry, README and full license reviewed. Remaining upstream repository tests/CI/PyInstaller/ignore files and third-party dependency implementations not claimed audited.",
+    "excluded": [
+      ".gitignore",
+      ".travis.yml",
+      "evtxtract.spec",
+      "tests/.gitignore",
+      "tests/fixtures.py",
+      "tests/readmd.txt",
+      "tests/test_all.py"
+    ],
+    "repository": "williballenthin/EVTXtract",
+    "selected_files": [
+      {
+        "bytes": 3699,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "c027091fa1255e75c53860757b9f10d24d69d251",
+        "path": "evtxtract/__init__.py",
+        "physical_lines": 106,
+        "review": "entire file read",
+        "sha256": "aac9d4fcccb9cecc23f8b356a7ad9bf051d1953abf8314e896144edeba7a6453"
+      },
+      {
+        "bytes": 18730,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "2e67067d9c094d4f3b6015ebae328842d6134727",
+        "path": "evtxtract/carvers.py",
+        "physical_lines": 602,
+        "review": "entire file read",
+        "sha256": "4c72194d993d36ef3c900312d58368c32016bb9bf11b386624562f87183a38ea"
+      },
+      {
+        "bytes": 4499,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "78ad7fdabd9bc8149984b1ad259f13f8e2f3f5df",
+        "path": "evtxtract/main.py",
+        "physical_lines": 133,
+        "review": "entire file read",
+        "sha256": "e566291ed669ba745ebffbcab95c760e9d8303ad5651d275734dd6a853759d9c"
+      },
+      {
+        "bytes": 8107,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "3c5dbaf6411da3ae8d845f545bc689834efa513c",
+        "path": "evtxtract/templates.py",
+        "physical_lines": 230,
+        "review": "entire file read",
+        "sha256": "4438557f352b0f5e6418b77a5cea6d6fb3437a0bd6b9c0f93a13f1a26b02dc8f"
+      },
+      {
+        "bytes": 1683,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "02e693219f3a07b08d93a9fa2b1fc716d4223cb0",
+        "path": "evtxtract/utils.py",
+        "physical_lines": 73,
+        "review": "entire file read",
+        "sha256": "f4ae125d2138a17606b3add10f29269bf7083065683719d95a03ebe478399593"
+      },
+      {
+        "bytes": 22,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "a6587aeab980dde9eedcf5fe7a5314f6ce9bff98",
+        "path": "evtxtract/version.py",
+        "physical_lines": 1,
+        "review": "entire file read",
+        "sha256": "379fa9f1d401f2ec2e08ca52d400cb7ff13aaef5a8bed451a77bd8f42ab6830e"
+      },
+      {
+        "bytes": 943,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "a9e0f2bba6e4fa2fbd826b120d258b76df618bb1",
+        "path": "setup.py",
+        "physical_lines": 32,
+        "review": "entire file read",
+        "sha256": "ef44c0edf88e27ada2a727926a0e2e60e0aba7c300c11b491c1286d4bb19218e"
+      },
+      {
+        "bytes": 11358,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "path": "LICENSE.TXT",
+        "physical_lines": 202,
+        "review": "entire file read",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "bytes": 7096,
+        "frozen_tree_match": true,
+        "git_blob_sha1": "81aad5078a4501a5a61ebeb1fd9810cbac68b3ed",
+        "path": "README.md",
+        "physical_lines": 188,
+        "review": "entire file read",
+        "sha256": "256def921d34774b7e19d4e6dab946fdb475ed6df38760f2655740fdc40e78f2"
+      }
+    ],
+    "selected_python_files": 7,
+    "selected_python_lines": 1177,
+    "selected_total_lines": 1567,
+    "tree_truncated": false
+  }
+}
