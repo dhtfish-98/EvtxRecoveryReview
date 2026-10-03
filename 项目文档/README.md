@@ -1,6 +1,8 @@
+> 目录已整理：文档在「项目文档」，构建、缓存与暂存输入在「Build」。从仓库根目录运行 `python3 构建.py --build`；如需使用本文原有源码命令，先运行 `python3 构建.py --stage --ci`，再进入 `Build/源码`。暂存会恢复原输入路径。现有版本和历史验证记录按各自提交理解。
+
 # EvtxRecoveryReview
 
-Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.1**. Upstream authors and reused components retain their original attribution.
+Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.2**. Upstream authors and reused components retain their original attribution.
 
 
 Offline defensive review of displaced EVTX chunks and orphan records in a local
@@ -52,8 +54,8 @@ be reduced. Over-cap input is not hashed. Bounded work may stop on a false magic
 candidate; its located OPEN gap is retained. Output overflow preserves counters
 and damage priority in an OPEN/FAIL summary, without a falsely complete result.
 
-Read [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md), [ORIGIN.md](ORIGIN.md) and
-[VALIDATION.md](VALIDATION.md) for supported profiles and measured evidence.
+Read [DEFENSIVE_SCOPE.md](<DEFENSIVE_SCOPE.md>), [ORIGIN.md](<ORIGIN.md>) and
+[VALIDATION.md](<VALIDATION.md>) for supported profiles and measured evidence.
 This is new recovery work by dhtfish98 with an explicitly reused independent
 decoder, not a sole-authored copy of EVTXtract. Apache-2.0 licenses and original
 authors are retained. Application eligibility and acquisition authenticity are OPEN.
