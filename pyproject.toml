@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "evtx-recovery-review"
-version = "0.1.0"
+version = "0.1.1"
 description = "Bounded offline EVTX image recovery with typed AST template inference and provenance"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
 license-files = ["LICENSE", "NOTICE", "licenses/*.txt"]
-authors = [{name = "bitfish886, with Codex AI assistance"}]
+authors = [{name = "dhtfish98"}]
 dependencies = []
 classifiers = ["Programming Language :: Python :: 3", "Topic :: Security"]
 

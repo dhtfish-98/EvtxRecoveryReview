@@ -1,7 +1,7 @@
 {
-  "all_file_count": 43,
+  "all_file_count": 45,
   "dependency_scope": "Zero third-party runtime. Pinned build tools direct metadata and complete available license texts verified to previously wholly reviewed bytes; implementation, vendored tools/Python/platform OPEN_NOT_AUDITED",
-  "exact_reused_core": "record-core-provenance.json",
+  "exact_reused_core": "record-core-provenance.json (historical original copy identity plus current attribution docstrings and positive flags/typed directory-relative support guard; event decoder logic unchanged)",
   "files": [
     {
       "bytes": 42,
@@ -44,44 +44,44 @@
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
     {
-      "bytes": 343,
+      "bytes": 397,
       "kind": "documentation_package",
       "path": "MANIFEST.in",
-      "physical_lines": 8,
+      "physical_lines": 10,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "00ad44697a2d126614c50aa47258364f5e4df06744d5b43b99259f4612bd1d1b"
+      "sha256": "0ff9cab38a33faf86dc49240565273c019e49fde6f7206ceb82773c229dec78d"
     },
     {
-      "bytes": 1787,
+      "bytes": 1736,
       "kind": "documentation_package",
       "path": "NOTICE",
       "physical_lines": 27,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "2fc41d315727cd9477c4c0a8cd51e0ac67cf1b981a07ac2b8c6875c963bcabf7"
+      "sha256": "fb438d01daf96eddb87082f9e91b84ba33f01c8ed2fafd0d2dcd472ea65c6ec2"
     },
     {
-      "bytes": 2213,
+      "bytes": 2850,
       "kind": "documentation_package",
       "path": "ORIGIN.md",
-      "physical_lines": 33,
+      "physical_lines": 38,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "0d0c12433540574dc77a5331e3af1e6f8154b0888b9a02b52e18b386c181e769"
+      "sha256": "5c640d36f772d755e989964c74cc9eb61d51edf963fa2be773a779d2adbc0ff3"
     },
     {
-      "bytes": 3280,
+      "bytes": 3827,
       "kind": "documentation_package",
       "path": "README.md",
-      "physical_lines": 56,
+      "physical_lines": 61,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "4e6bccab3fa2860cb00290c392ab83d6b290d7b1c869c82f8d7606dface54b72"
+      "sha256": "3667fb27f04a58012aa9d6eedfa903ce9881888389d5bc244920ccd14dc7fb7a"
     },
     {
-      "bytes": 4320,
+      "bytes": 6036,
       "kind": "documentation_package",
       "path": "VALIDATION.md",
-      "physical_lines": 62,
+      "physical_lines": 74,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "54136e420b33a3242196a4e070e503c756e65f09715584e012dce3720a60e37b"
+      "sha256": "75ec5a110620c56056772671ac167b03b240fee230cee45e8ae4ab25974189bb"
     },
     {
       "bytes": 2388,
@@ -92,12 +92,12 @@
       "sha256": "0436779bfc7a817b913aa8f1f911710b4b93a7956025f4853d438c5ffae5a3a7"
     },
     {
-      "bytes": 3923,
+      "bytes": 5941,
       "kind": "evidence",
       "path": "evidence/record-core-provenance.json",
-      "physical_lines": 92,
+      "physical_lines": 123,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "55393b70713f761cf61fee18f059ef9d9fa5033360ced27e486112a2b6bf960c"
+      "sha256": "2049da1fe784911ac96cb02963c6707c48f6391ed78e1644403417795d7b9075"
     },
     {
       "bytes": 7217,
@@ -124,12 +124,12 @@
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
     {
-      "bytes": 669,
+      "bytes": 642,
       "kind": "documentation_package",
       "path": "pyproject.toml",
       "physical_lines": 21,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "d42e76317e313c79539179f807aaeea372c3826e4bf39740270d3bc7547f570c"
+      "sha256": "7adbeaf1496a244e483e8ae618f98077af339947aeae611cce0b636b46605c66"
     },
     {
       "bytes": 85,
@@ -140,12 +140,12 @@
       "sha256": "206d502f592f43b6cb1a0ec971e5e4e38be6d186550c3958ee3d0fc5632c445b"
     },
     {
-      "bytes": 183,
+      "bytes": 209,
       "kind": "runtime",
       "path": "src/evtx_recovery_review/__init__.py",
-      "physical_lines": 6,
+      "physical_lines": 8,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "aa78bb4ec91f2ca9fd93a3f204008c704ce391f26d985a0b37c60047ec18b2ab"
+      "sha256": "630813308ea77e11fd7dd700beb7f3491a875665d5315332ca59dd24796733a6"
     },
     {
       "bytes": 48,
@@ -156,12 +156,12 @@
       "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
     },
     {
-      "bytes": 193,
+      "bytes": 182,
       "kind": "runtime",
       "path": "src/evtx_recovery_review/_record_core/__init__.py",
       "physical_lines": 7,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "e905e4f57b76d3cdb0b554350fc95267ddcbdec10f0b6baabe4cba4877d1304b"
+      "sha256": "bee8843d568baab8d36707ae9faa864575bb4707e3c937602a984c635b7973b8"
     },
     {
       "bytes": 48,
@@ -196,20 +196,20 @@
       "sha256": "2151af4a30ba9eb5b6638e51729550909a5e947faf523afe6ae93d8c111c951a"
     },
     {
-      "bytes": 5742,
+      "bytes": 5741,
       "kind": "runtime",
       "path": "src/evtx_recovery_review/_record_core/contracts.py",
       "physical_lines": 153,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "f9714447e0bfcd4bbc987332978ad884f65ae4e182524a42323b10197d533b62"
+      "sha256": "4ec1b2a808385b33a82a09bb2a3233b5f963e1304a9bf5fcd12c9f801870e79d"
     },
     {
-      "bytes": 2262,
+      "bytes": 2411,
       "kind": "runtime",
       "path": "src/evtx_recovery_review/_record_core/files.py",
-      "physical_lines": 49,
+      "physical_lines": 51,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "729d79db1cb36321d0e1324a17a8d4ddb6daad734b10e2bde2b70d5ac1e3cc99"
+      "sha256": "b0ed6d8c7a9b8291636c7d8d4d9f92a2bd0165501df907394298ff5e9d51cde1"
     },
     {
       "bytes": 5346,
@@ -321,7 +321,7 @@
       "path": "tests/test_package_gate.py",
       "physical_lines": 121,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "7791ae1a25455011bd961faa9a91f3c22305e694227285068e73969270d439b8"
+      "sha256": "cf0cb5c0cc47c86311e7b91b4aef27bdb834c53063a1a69740e3275c7658c7bb"
     },
     {
       "bytes": 40769,
@@ -345,16 +345,38 @@
       "path": "tools/verify_install.py",
       "physical_lines": 94,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "3f79586398d5b533ba405f800aa780e972298a0d45c30fb034acdf1fd33d798e"
+      "sha256": "c76c38bd26f0c8b780d161d71d960d810f5c20b6380c2207782e3d6b4bbf1e3a"
+    },
+    {
+      "path": "tests/test_safe_read_capabilities.py",
+      "bytes": 6162,
+      "sha256": "331342703116ea0b9073132bad8be60561d53a4c5228eadabe40351d04b3d2ca",
+      "read_scope": "ENTIRE_CURRENT_FILE",
+      "kind": "tests",
+      "physical_lines": 117
+    },
+    {
+      "path": "ATTRIBUTION_UPDATE.json",
+      "bytes": 938,
+      "sha256": "7ab1b2a561b8de8efe15104bf79ac0322d4d919139b882dde3b907c271f98a29",
+      "read_scope": "ENTIRE_CURRENT_FILE",
+      "kind": "documentation_package",
+      "physical_lines": 13
     }
   ],
   "permanent_identity_state": "UNVERIFIED_original_event_and_image; OPEN_cvp",
   "project": "EvtxRecoveryReview",
   "runtime_files": 20,
-  "runtime_lines": 2012,
+  "runtime_lines": 2016,
   "schema_version": 1,
   "scope": "All project runtime/tests/build-verification/docs/package/CI/full licenses/evidence; manifest excluded from itself",
-  "test_files": 5,
-  "test_lines": 1503,
-  "upstream_gate": "source-gate.json"
+  "test_files": 6,
+  "test_lines": 1620,
+  "upstream_gate": "source-gate.json",
+  "current_attribution_version": "0.1.1",
+  "current_implementation_author": "dhtfish98",
+  "current_validation": "ATTRIBUTION_UPDATE.json",
+  "current_functional_revision": "Positive mandatory safe-file flags and typed, operation-complete dir_fd support guard; current full inventory in SOURCE_MANIFEST.json.",
+  "current_source_manifest": "SOURCE_MANIFEST.json",
+  "inventory_exclusions": "This review inventory and SOURCE_MANIFEST.json exclude their own/recursive manifest bytes; full current repository file identities are in SOURCE_MANIFEST.json and external batch report."
 }

@@ -1,4 +1,4 @@
-"""Bounded, source-private evidence contracts. New Codex-assisted implementation."""
+"""Bounded, source-private evidence contracts. Implementation author: dhtfish98."""
 
 from dataclasses import dataclass, fields
 import hashlib

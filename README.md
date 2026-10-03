@@ -1,5 +1,8 @@
 # EvtxRecoveryReview
 
+Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.1**. Upstream authors and reused components retain their original attribution.
+
+
 Offline defensive review of displaced EVTX chunks and orphan records in a local
 byte image. It reconstructs candidate evidence through typed template ASTs and
 keeps each inference separate from original event identity.
@@ -51,6 +54,8 @@ and damage priority in an OPEN/FAIL summary, without a falsely complete result.
 
 Read [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md), [ORIGIN.md](ORIGIN.md) and
 [VALIDATION.md](VALIDATION.md) for supported profiles and measured evidence.
-This is new Codex-assisted recovery work with an explicitly reused independent
+This is new recovery work by dhtfish98 with an explicitly reused independent
 decoder, not a sole-authored copy of EVTXtract. Apache-2.0 licenses and original
 authors are retained. Application eligibility and acquisition authenticity are OPEN.
+
+Safe local file input requires positive integer `O_DIRECTORY`, `O_NOFOLLOW`, `O_NONBLOCK` flags, plus directory-relative operations only where used by this reader. Missing, None, zero or boolean flags return the existing controlled unsupported/error result before opening input. File-reader validation covers macOS/Linux; native Windows safe file reading is not established.

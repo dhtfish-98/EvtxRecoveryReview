@@ -31,7 +31,7 @@ def verify(wheel, root, distribution=None):
     raw_manifest = raw_file(root / "evidence/source-review.json", 256 * 1024)
     manifest = json.loads(raw_manifest)
     distribution = metadata.distribution("evtx-recovery-review") if distribution is None else distribution
-    if distribution.version != "0.1.0":
+    if distribution.version != "0.1.1":
         raise ValueError("installed_version_mismatch")
     if Path(wheel).stat().st_size > 8 * 1024 * 1024:
         raise ValueError("wheel_budget")

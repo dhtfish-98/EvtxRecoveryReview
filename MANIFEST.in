@@ -6,3 +6,5 @@ recursive-include tests *.py
 recursive-include tools *.py
 recursive-include .github *.yml
 recursive-exclude * __pycache__ *.pyc
+
+include SOURCE_MANIFEST.json ATTRIBUTION_UPDATE.json

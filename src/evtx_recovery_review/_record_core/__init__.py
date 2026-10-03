@@ -1,4 +1,4 @@
-"""Offline EVTX record evidence. New implementation with Codex AI assistance."""
+"""Offline EVTX record evidence. Implementation author: dhtfish98."""
 
 from .contracts import Limits
 from .review import review

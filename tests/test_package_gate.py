@@ -15,7 +15,7 @@ SPEC.loader.exec_module(GATE)
 
 
 class Distribution:
-    version = "0.1.0"
+    version = "0.1.1"
 
     def __init__(self, root, names):
         self.root, self.files = root, [Path(name) for name in names]
@@ -30,7 +30,7 @@ class PackageGateTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.source, self.installed = self.root / "source", self.root / "installed"
         self.wheel = self.root / "test.whl"
-        self.metadata_name = "evtx_recovery_review-0.1.0.dist-info/METADATA"
+        self.metadata_name = "evtx_recovery_review-0.1.1.dist-info/METADATA"
         self.files, rows = {}, []
         # This independent fake distribution supplies 20 module identities; a
         # real built/installed consumer is separately checked after final build.
@@ -43,7 +43,7 @@ class PackageGateTests(unittest.TestCase):
             rows.append({"kind": "runtime", "path": relative, "bytes": len(raw),
                          "sha256": hashlib.sha256(raw).hexdigest()})
             self.files[relative[4:]] = raw
-        self.files[self.metadata_name] = b"Name: evtx-recovery-review\r\nVersion: 0.1.0\r\n\r\n"
+        self.files[self.metadata_name] = b"Name: evtx-recovery-review\r\nVersion: 0.1.1\r\n\r\n"
         for name in ("LICENSE", "NOTICE", "licenses/EVTXtract-Apache-2.0.txt", "licenses/python-evtx-Apache-2.0.txt"):
             path = self.source / name
             path.parent.mkdir(parents=True, exist_ok=True)

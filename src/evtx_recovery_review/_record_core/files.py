@@ -6,8 +6,10 @@ import stat
 
 
 def read_local(path, limit):
-    if (not all(hasattr(os, name) for name in ("O_DIRECTORY", "O_NOFOLLOW", "O_NONBLOCK"))
-            or os.open not in getattr(os, "supports_dir_fd", ())):
+    dir_fd_support = getattr(os, "supports_dir_fd", None)
+    if (any(type(getattr(os, name, None)) is not int or getattr(os, name, None) <= 0 for name in ("O_DIRECTORY", "O_NOFOLLOW", "O_NONBLOCK"))
+            or type(dir_fd_support) not in (set, frozenset)
+            or os.open not in dir_fd_support):
         raise ValueError("platform_secure_open_unsupported")
     value = os.fspath(path)
     if type(value) is not str or ":" in value or value == "-" or "\0" in value:
