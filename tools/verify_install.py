@@ -68,7 +68,7 @@ def verify(wheel, root, distribution=None):
         if len(metadata_raw) > 65536 or metadata_raw != installed_raw(distribution, metadata_name, 65536):
             raise ValueError("raw_metadata_identity")
         licenses = []
-        for name in ("LICENSE", "NOTICE"):
+        for name in ("项目文档/LICENSE", "项目文档/NOTICE"):
             source = raw_file(root / name, 65536)
             target = metadata_name[:-8] + "licenses/" + name
             if archive.read(target) != source or installed_raw(distribution, target, 65536) != source:

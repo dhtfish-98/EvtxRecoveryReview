@@ -193,8 +193,8 @@
     },
     {
       "path": "tools/verify_install.py",
-      "sha256": "dc8d341de11ee830a6162758b1315b5f7e6f78737ebcfa4b7d32211d969c0137",
-      "bytes": 4510
+      "sha256": "df5b7c65db267ca5bac148e3d1128e95ae31e22ee00ba63fe907e772bfae6597",
+      "bytes": 4484
     },
     {
       "sha256": "248c7594ad67a2d9380273b1dd68986253a2d9bac75595f1f6e3647720335c8e",
@@ -242,11 +242,6 @@
       "bytes": 7451
     },
     {
-      "path": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.layout-2399da86f3a1.json",
-      "sha256": "974f61ee1f3969912937745ce4b0bb0d558a59e6edb9162d2cd67f7dcf9736d5",
-      "bytes": 9081
-    },
-    {
       "sha256": "fceb6352240787677869ec7c10c6ee3c1fe136aee3ba870a2748f600094153d2",
       "bytes": 7619,
       "path": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.public-3c79929ea3fb.json"
@@ -263,12 +258,5 @@
     "original_inventory_sha256": "fceb6352240787677869ec7c10c6ee3c1fe136aee3ba870a2748f600094153d2",
     "path_view": "Canonical repository paths; the builder also restores byte-identical legacy aliases under ignored Build for existing packaging checks",
     "scope": "Current file inventory and packaging paths only; runtime bytes/version/API unchanged. Historical validation and security conclusions are retained, not rerun or newly certified."
-  },
-  "directory_layout_ci_repair": {
-    "scope": "CI paths/packaging inventory only; no runtime semantic retest",
-    "first_layout_commit": "2399da86f3a16f4657ba17c3b3794c14da04713f",
-    "first_layout_inventory_archive": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.layout-2399da86f3a1.json",
-    "archive_sha256": "974f61ee1f3969912937745ce4b0bb0d558a59e6edb9162d2cd67f7dcf9736d5",
-    "previous_prepare_sha256": "7602e39fbe2453a2e7ac2350a04026674578b94f3411791544cfed641a9e1f29"
   }
 }
