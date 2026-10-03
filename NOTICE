@@ -1,27 +1,14 @@
 EvtxRecoveryReview
-Copyright 2026 dhtfish98. New recovery implementation and tests.
+Copyright 2026 dhtfish98. New recovery layer and recovery-specific tests, Apache-2.0.
 
-EVTXtract by Willi Ballenthin was studied at fixed commit
-0895be4c25125b5d087cc1c51b601e2852a67b85. Its selected complete runtime, CLI,
-packaging entry, README and full Apache License 2.0 were reviewed. Original
-authorship is retained; the applicant is not the original sole author of EVTXtract.
-Its complete license is preserved in licenses/EVTXtract-Apache-2.0.txt.
-EVTXtract code, lxml, hexdump, python-evtx and raw event fixtures are not shipped.
+Mechanism reference: williballenthin/EVTXtract at
+0895be4c25125b5d087cc1c51b601e2852a67b85. EVTXtract, lxml, hexdump,
+python-evtx and original raw event fixtures are not shipped.
 
-All ten previously independently written EvtxRecordReview runtime modules are
-copied byte-for-byte into the private _record_core package at the published
-commit c6b12c0497ee9e28d71c1322c5c01790011732f2. That prior project
-is credited rather than presented as newly invented in this recovery project.
-Its independent fixture writer and 73 tests are reused here; test import targets
-are adapted to the private package. Recovery-specific carving, catalog matching,
-provenance decisions, bounded AST XML reconstruction and their tests are new.
-
-The prior decoder was informed by python-evtx, copyright 2012, 2013 Willi
-Ballenthin while at Mandiant, fixed commit
-1edde3655c676bd44990ce9762d6b8f73334ed1d. Complete Apache License 2.0 is preserved
-in licenses/python-evtx-Apache-2.0.txt. Its historical acknowledgement of Andreas
-Schuster's EVTX format research and Parse-Evtx is retained; Parse-Evtx code was
-not audited, copied, invoked or bundled. Microsoft MS-EVEN6 and libyal/libevtx
-format references informed the prior finite decoder; their code/text is not
-shipped or claimed as applicant authorship. The POSIX snapshot-reader pattern
-is shared portfolio work, not a new original format algorithm.
+The ten previous independently written EvtxRecordReview modules are actually
+reused in _record_core from c6b12c0497ee9e28d71c1322c5c01790011732f2,
+with original/current hashes and three documented revisions in
+evidence/record-core-provenance.json. Prior fixture writer and core tests are
+also reused. The root Apache-2.0 LICENSE applies to that portfolio code.
+This decoder is not newly invented by the recovery layer and is not the
+third-party python-evtx implementation. Source/format references remain in ORIGIN.md.

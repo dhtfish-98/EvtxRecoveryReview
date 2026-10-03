@@ -4,6 +4,7 @@ from importlib import metadata
 import json
 from pathlib import Path
 import sys
+import tomllib
 import zipfile
 
 
@@ -31,7 +32,8 @@ def verify(wheel, root, distribution=None):
     raw_manifest = raw_file(root / "evidence/source-review.json", 256 * 1024)
     manifest = json.loads(raw_manifest)
     distribution = metadata.distribution("evtx-recovery-review") if distribution is None else distribution
-    if distribution.version != "0.1.1":
+    current_version = tomllib.loads(raw_file(root / "pyproject.toml", 65536).decode("utf-8"))["project"]["version"]
+    if distribution.version != current_version:
         raise ValueError("installed_version_mismatch")
     if Path(wheel).stat().st_size > 8 * 1024 * 1024:
         raise ValueError("wheel_budget")
@@ -66,7 +68,7 @@ def verify(wheel, root, distribution=None):
         if len(metadata_raw) > 65536 or metadata_raw != installed_raw(distribution, metadata_name, 65536):
             raise ValueError("raw_metadata_identity")
         licenses = []
-        for name in ("LICENSE", "NOTICE", "licenses/EVTXtract-Apache-2.0.txt", "licenses/python-evtx-Apache-2.0.txt"):
+        for name in ("LICENSE", "NOTICE"):
             source = raw_file(root / name, 65536)
             target = metadata_name[:-8] + "licenses/" + name
             if archive.read(target) != source or installed_raw(distribution, target, 65536) != source:

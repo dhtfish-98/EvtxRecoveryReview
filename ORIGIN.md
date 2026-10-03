@@ -1,6 +1,6 @@
 # Origin and review boundary
 
-Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.1**. Upstream authors and reused components retain their original attribution.
+Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.2**. Upstream authors and reused components retain their original attribution.
 
 
 [EVTXtract](https://github.com/williballenthin/EVTXtract/tree/0895be4c25125b5d087cc1c51b601e2852a67b85)
@@ -30,8 +30,8 @@ The prior separately written wire fixture writer and 73 core test methods are
 reused, with test namespace imports adjusted. New image fixtures and recovery
 tests encode actual chunks, resident/reference records, values, names and CRCs
 without production encoders. Every new runtime/test/package/CI/document/license
-file is read completely and hashed at freeze. Full licenses and original authors
-are retained. New implementation author: dhtfish98. Upstream work and the reused
+file is read completely and hashed at freeze. The root Apache license covers the actual reused portfolio decoder; separate
+EVTXtract/python-evtx design-reference license copies are not distributed. New implementation author: dhtfish98. Upstream work and the reused
 prior decoder are not new recovery contributions. CVP and
 application acceptance remain OPEN.
 

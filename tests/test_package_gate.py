@@ -15,7 +15,7 @@ SPEC.loader.exec_module(GATE)
 
 
 class Distribution:
-    version = "0.1.1"
+    version = "0.1.2"
 
     def __init__(self, root, names):
         self.root, self.files = root, [Path(name) for name in names]
@@ -30,8 +30,10 @@ class PackageGateTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.source, self.installed = self.root / "source", self.root / "installed"
         self.wheel = self.root / "test.whl"
-        self.metadata_name = "evtx_recovery_review-0.1.1.dist-info/METADATA"
+        self.metadata_name = "evtx_recovery_review-0.1.2.dist-info/METADATA"
         self.files, rows = {}, []
+        self.source.mkdir(parents=True)
+        (self.source / "pyproject.toml").write_text('[project]\nversion = "0.1.2"\n')
         # This independent fake distribution supplies 20 module identities; a
         # real built/installed consumer is separately checked after final build.
         for index in range(20):
@@ -43,8 +45,8 @@ class PackageGateTests(unittest.TestCase):
             rows.append({"kind": "runtime", "path": relative, "bytes": len(raw),
                          "sha256": hashlib.sha256(raw).hexdigest()})
             self.files[relative[4:]] = raw
-        self.files[self.metadata_name] = b"Name: evtx-recovery-review\r\nVersion: 0.1.1\r\n\r\n"
-        for name in ("LICENSE", "NOTICE", "licenses/EVTXtract-Apache-2.0.txt", "licenses/python-evtx-Apache-2.0.txt"):
+        self.files[self.metadata_name] = b"Name: evtx-recovery-review\r\nVersion: 0.1.2\r\n\r\n"
+        for name in ("LICENSE", "NOTICE"):
             path = self.source / name
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(b"ENTIRE_LICENSE_BYTES\n")
@@ -75,7 +77,7 @@ class PackageGateTests(unittest.TestCase):
         self.assertEqual(result["status"], "PASS")
         self.assertEqual(result["runtime_modules"], 20)
         self.assertEqual(result["raw_metadata_sha256"], hashlib.sha256(self.files[self.metadata_name]).hexdigest())
-        self.assertEqual(len(result["licenses"]), 4)
+        self.assertEqual(len(result["licenses"]), 2)
 
     def test_changed_source_bytes_are_rejected(self):
         (self.source / "src/evtx_recovery_review/module0.py").write_bytes(b"VALUE = 2\n")

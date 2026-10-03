@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "project": "EvtxRecoveryReview",
+  "version": "0.1.2",
+  "implementation_author": "dhtfish98",
+  "scope": "Material-backed license-reference cleanup; runtime parsing/evidence logic unchanged.",
+  "removed_reference_files": [
+    "licenses/EVTXtract-Apache-2.0.txt",
+    "licenses/python-evtx-Apache-2.0.txt"
+  ],
+  "retained_license_files": [
+    "LICENSE",
+    "NOTICE"
+  ],
+  "actual_material_boundaries": "Real reused decoder, native dependency, Microsoft example and copied PECmd test fragment remain attributed where present. Genuine Lnk offline build tools retain original notices.",
+  "validation_record": "VALIDATION.md; external package/build/consumer records bind actual assets and results.",
+  "current_source_manifest": "SOURCE_MANIFEST.json",
+  "source_tests": {
+    "status": "PASS",
+    "count": 124
+  }
+}

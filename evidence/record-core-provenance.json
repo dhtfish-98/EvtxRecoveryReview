@@ -118,6 +118,6 @@
     "product_status": "OPEN",
     "raw_header_System_domain_mismatch_issue38": "OPEN_preserved_unchanged"
   },
-  "attribution": "Complete previously reviewed decoder originally copied byte-exact; not invented anew in this recovery project. Original source SHA/bytes remain historical copy evidence. Current SHA/bytes bind two attribution docstring revisions and a secure-reader guard revision requiring exact positive integer OS protection flags and typed, operation-complete directory-relative support declarations. Parsing logic and embedded prior decoder version 0.1.0 remain unchanged. Original Apache authors and full licenses retained.",
-  "current_package_version": "0.1.1"
+  "attribution": "Complete previously reviewed decoder originally copied byte-exact; not invented anew in this recovery project. Original source SHA/bytes remain historical copy evidence. Current SHA/bytes bind two attribution docstring revisions and a secure-reader guard revision requiring exact positive integer OS protection flags and typed, operation-complete directory-relative support declarations. Parsing logic and embedded prior decoder version 0.1.0 remain unchanged. The root Apache license applies to the actual reused portfolio implementation; external original parser sources remain research references, not bundled code.",
+  "current_package_version": "0.1.2"
 }
