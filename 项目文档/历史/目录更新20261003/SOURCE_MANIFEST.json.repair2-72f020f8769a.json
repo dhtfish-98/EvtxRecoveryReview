@@ -193,8 +193,8 @@
     },
     {
       "path": "tools/verify_install.py",
-      "sha256": "25b8703dca829939ff06d4aa90da1d33001cfdba103549c749b43e3a7ce9f335",
-      "bytes": 4761
+      "sha256": "dc8d341de11ee830a6162758b1315b5f7e6f78737ebcfa4b7d32211d969c0137",
+      "bytes": 4510
     },
     {
       "sha256": "248c7594ad67a2d9380273b1dd68986253a2d9bac75595f1f6e3647720335c8e",
@@ -252,11 +252,6 @@
       "path": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.public-3c79929ea3fb.json"
     },
     {
-      "path": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.repair2-72f020f8769a.json",
-      "sha256": "065979d7c71cef76e8c89623eec944cb293f05a4e84ab7a090c40f7ef877af59",
-      "bytes": 9806
-    },
-    {
       "path": "项目文档/目录与构建.md",
       "sha256": "3f7599e7a43cd47108377905ec46e6894317d8e574e3f865157e9fc9bc6d7c72",
       "bytes": 816
@@ -275,12 +270,5 @@
     "first_layout_inventory_archive": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.layout-2399da86f3a1.json",
     "archive_sha256": "974f61ee1f3969912937745ce4b0bb0d558a59e6edb9162d2cd67f7dcf9736d5",
     "previous_prepare_sha256": "7602e39fbe2453a2e7ac2350a04026674578b94f3411791544cfed641a9e1f29"
-  },
-  "directory_layout_ci_repair2": {
-    "scope": "Finite legal metadata profile/byte-preserving checkout inventory only; no runtime behavior or old suite execution",
-    "previous_published_layout_repair_commit": "72f020f8769a321863653eecab93ffb505af7d75",
-    "previous_current_inventory_archive": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.repair2-72f020f8769a.json",
-    "archive_sha256": "065979d7c71cef76e8c89623eec944cb293f05a4e84ab7a090c40f7ef877af59",
-    "previous_frozen_preparation_sha256": "2e73dce7eb8422f4e13672e75d8b26f1c408e06b15cff609c5782846504f0d5f"
   }
 }

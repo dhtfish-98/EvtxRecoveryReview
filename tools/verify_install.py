@@ -32,7 +32,12 @@ def verify(wheel, root, distribution=None):
     raw_manifest = raw_file(root / "evidence/source-review.json", 256 * 1024)
     manifest = json.loads(raw_manifest)
     distribution = metadata.distribution("evtx-recovery-review") if distribution is None else distribution
-    current_version = tomllib.loads(raw_file(root / "pyproject.toml", 65536).decode("utf-8"))["project"]["version"]
+    project = tomllib.loads(raw_file(root / "pyproject.toml", 65536).decode("utf-8"))["project"]
+    current_version = project["version"]
+    legal_files = project.get("license-files", ["LICENSE", "NOTICE"])
+    if type(legal_files) is not list or legal_files not in (
+            ["LICENSE", "NOTICE"], ["项目文档/LICENSE", "项目文档/NOTICE"]):
+        raise ValueError("license_file_profile")
     if distribution.version != current_version:
         raise ValueError("installed_version_mismatch")
     if Path(wheel).stat().st_size > 8 * 1024 * 1024:
@@ -68,7 +73,7 @@ def verify(wheel, root, distribution=None):
         if len(metadata_raw) > 65536 or metadata_raw != installed_raw(distribution, metadata_name, 65536):
             raise ValueError("raw_metadata_identity")
         licenses = []
-        for name in ("项目文档/LICENSE", "项目文档/NOTICE"):
+        for name in legal_files:
             source = raw_file(root / name, 65536)
             target = metadata_name[:-8] + "licenses/" + name
             if archive.read(target) != source or installed_raw(distribution, target, 65536) != source:
