@@ -22,32 +22,32 @@
       "bytes": 195
     },
     {
-      "path": "ATTRIBUTION_UPDATE.json",
+      "path": "项目文档/ATTRIBUTION_UPDATE.json",
       "sha256": "aa650ac17c60e2253c0169f980a3010c6281df0a48e95698139c917532f8ea94",
       "bytes": 1054
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "355ac110bd161f1cb7373326546ea5484175d2c45b42437ebd1d10b0f93ec55d",
-      "bytes": 989
+      "sha256": "c5bf6037c43ed616b2201b750168f3c2dc18c813998766cb0b1003b52dcbc2ca",
+      "bytes": 1015
     },
     {
-      "path": "evidence/record-core-native.json",
+      "path": "项目文档/evidence/record-core-native.json",
       "sha256": "0436779bfc7a817b913aa8f1f911710b4b93a7956025f4853d438c5ffae5a3a7",
       "bytes": 2388
     },
     {
-      "path": "evidence/record-core-provenance.json",
+      "path": "项目文档/evidence/record-core-provenance.json",
       "sha256": "4a1288fac29f7a00332a3bfb1e90cf22a0ad4532b636f51a3efbcd67f0e26265",
       "bytes": 6047
     },
     {
-      "path": "evidence/source-gate.json",
+      "path": "项目文档/evidence/source-gate.json",
       "sha256": "2ff7ccc8457746de5f850d6004d89ba284ca8ca2bdb4f316ea2a0099d5c7d703",
       "bytes": 7217
     },
     {
-      "path": "evidence/source-review.json",
+      "path": "项目文档/evidence/source-review.json",
       "sha256": "aa7d581877c6c93721dbbd1cc3b15479b8e98b3d90e2107a83375a7fcf63d1f4",
       "bytes": 12685
     },
@@ -173,8 +173,8 @@
     },
     {
       "path": "tests/test_package_gate.py",
-      "sha256": "e0b39f1b836ad091e3d2ec41a39bae9d844bc580c43c0f00af89e6602fa59436",
-      "bytes": 5351
+      "sha256": "e7500e356abcaa0d499ed12bb93854ea5c3369a017371dd1dd57bb6ae4341d2f",
+      "bytes": 5389
     },
     {
       "path": "tests/test_record_core.py",
@@ -193,8 +193,8 @@
     },
     {
       "path": "tools/verify_install.py",
-      "sha256": "25b8703dca829939ff06d4aa90da1d33001cfdba103549c749b43e3a7ce9f335",
-      "bytes": 4761
+      "sha256": "6086c5c11e36b9379a86ec2fdb121c3b898527ebe6f7415ea93ff0f5b3fd5a42",
+      "bytes": 4774
     },
     {
       "sha256": "248c7594ad67a2d9380273b1dd68986253a2d9bac75595f1f6e3647720335c8e",

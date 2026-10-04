@@ -1,12 +1,12 @@
 include 项目文档/README.md 项目文档/ORIGIN.md 项目文档/DEFENSIVE_SCOPE.md 项目文档/VALIDATION.md 项目文档/NOTICE 项目文档/LICENSE
 include pyproject.toml requirements-build.txt .gitattributes .gitignore
-recursive-include evidence *.json
+recursive-include 项目文档/evidence *.json
 recursive-include tests *.py
 recursive-include tools *.py
 recursive-include .github *.yml
 recursive-exclude * __pycache__ *.pyc
 
-include SOURCE_MANIFEST.json ATTRIBUTION_UPDATE.json
+include SOURCE_MANIFEST.json 项目文档/ATTRIBUTION_UPDATE.json
 
 include 项目文档/LICENSE_CLEANUP.json
 

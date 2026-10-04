@@ -29,7 +29,7 @@ def installed_raw(distribution, name, cap):
 
 def verify(wheel, root, distribution=None):
     root = Path(root)
-    raw_manifest = raw_file(root / "evidence/source-review.json", 256 * 1024)
+    raw_manifest = raw_file(root / "项目文档/evidence/source-review.json", 256 * 1024)
     manifest = json.loads(raw_manifest)
     distribution = metadata.distribution("evtx-recovery-review") if distribution is None else distribution
     project = tomllib.loads(raw_file(root / "pyproject.toml", 65536).decode("utf-8"))["project"]

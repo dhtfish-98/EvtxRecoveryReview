@@ -51,8 +51,8 @@ class PackageGateTests(unittest.TestCase):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(b"ENTIRE_LICENSE_BYTES\n")
             self.files[self.metadata_name[:-8] + "licenses/" + name] = path.read_bytes()
-        manifest = self.source / "evidence/source-review.json"
-        manifest.parent.mkdir()
+        manifest = self.source / "项目文档/evidence/source-review.json"
+        manifest.parent.mkdir(parents=True)
         manifest.write_text(json.dumps({"files": rows}))
         self.write_wheel()
         for name, raw in self.files.items():
@@ -111,7 +111,7 @@ class PackageGateTests(unittest.TestCase):
             self.verify()
 
     def test_runtime_manifest_requires_all_modules(self):
-        manifest = self.source / "evidence/source-review.json"
+        manifest = self.source / "项目文档/evidence/source-review.json"
         value = json.loads(manifest.read_text())
         value["files"].pop()
         manifest.write_text(json.dumps(value))
