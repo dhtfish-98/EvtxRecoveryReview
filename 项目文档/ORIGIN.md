@@ -1,6 +1,6 @@
 # Origin and review boundary
 
-Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.2**. Upstream authors and reused components retain their original attribution.
+Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.3**. Upstream authors and reused components retain their original attribution.
 
 
 [EVTXtract](https://github.com/williballenthin/EVTXtract/tree/0895be4c25125b5d087cc1c51b601e2852a67b85)

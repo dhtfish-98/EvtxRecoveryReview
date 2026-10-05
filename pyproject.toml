@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "evtx-recovery-review"
-version = "0.1.2"
+version = "0.1.3"
 description = "Bounded offline EVTX image recovery with typed AST template inference and provenance"
 readme = "项目文档/README.md"
 requires-python = ">=3.11"

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "project": "EvtxRecoveryReview",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "implementation_author": "dhtfish98",
   "self_excluded_to_avoid_recursive_hash": true,
   "current_validation": "项目文档/LICENSE_CLEANUP.json",
@@ -48,12 +48,12 @@
     },
     {
       "path": "项目文档/evidence/source-review.json",
-      "sha256": "aa7d581877c6c93721dbbd1cc3b15479b8e98b3d90e2107a83375a7fcf63d1f4",
-      "bytes": 12685
+      "sha256": "0f5f444cd1390ff86e43d752ec6b7dcbcd01ecc5af10abeecf940235c97bf867",
+      "bytes": 12831
     },
     {
       "path": "pyproject.toml",
-      "sha256": "d5aa61b84f076169b19ed5f8d953d3ce94e8711c6e2bfecad975a6caac997755",
+      "sha256": "36533b5f61fb14cf5f7c895f4aee380c8041ecd18b3a36515e0bf64d70673982",
       "bytes": 663
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "path": "src/evtx_recovery_review/__init__.py",
-      "sha256": "1a1feef657302acf52b0c605f3a2098ee8fd9e044f6586ef0fe7d80ed4b7aa7d",
+      "sha256": "3476eadacaf79603516ab012b401b2f97ec04908ab9707e4b507fdbc41fce1b8",
       "bytes": 209
     },
     {
@@ -202,7 +202,7 @@
       "path": "构建.py"
     },
     {
-      "sha256": "aac38f9e4cc32ed8af64c641224c6879f4b825af6da7e33337201f987ab07676",
+      "sha256": "20f1eb32d1a073d886ae0779324313b61bf221a6237289614f573dd89c034323",
       "bytes": 1464,
       "path": "构建配置.json"
     },
@@ -228,18 +228,18 @@
     },
     {
       "path": "项目文档/ORIGIN.md",
-      "sha256": "3fa9a46c46b08421c4a7ec1c815193ac1ed91c7c61da82be9593aca8c27ab779",
+      "sha256": "e98b4f8c1e1d5b444d2536ed89517e471957dded26abab2f45c42a966a2d8378",
       "bytes": 2953
     },
     {
       "path": "项目文档/README.md",
-      "sha256": "b6a9e4f90edc179f3b1e6f20a7f8543800e7bffe0c0feaef988c9615155da438",
+      "sha256": "b4b2cded446e042a244836f9707e38f8b37f8cc42b633a8d4b90f4041b21bf62",
       "bytes": 4188
     },
     {
       "path": "项目文档/VALIDATION.md",
-      "sha256": "0c8cf912584dd5e0a519a78b4d5d571ad5740945f95b05ef64a35693f323d62a",
-      "bytes": 7451
+      "sha256": "80ebf1db4c716e5c78101756184b0978a5c737a7836fde28f0b03c7e317c5d94",
+      "bytes": 8034
     },
     {
       "path": "项目文档/历史/目录更新20261003/SOURCE_MANIFEST.json.layout-2399da86f3a1.json",

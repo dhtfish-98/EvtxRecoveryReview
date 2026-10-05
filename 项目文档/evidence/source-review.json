@@ -129,7 +129,7 @@
       "path": "src/evtx_recovery_review/__init__.py",
       "physical_lines": 8,
       "read_scope": "ENTIRE_FILE",
-      "sha256": "1a1feef657302acf52b0c605f3a2098ee8fd9e044f6586ef0fe7d80ed4b7aa7d"
+      "sha256": "3476eadacaf79603516ab012b401b2f97ec04908ab9707e4b507fdbc41fce1b8"
     },
     {
       "bytes": 48,
@@ -363,5 +363,6 @@
   "current_functional_revision": "Positive mandatory safe-file flags and typed, operation-complete dir_fd support guard; current full inventory in SOURCE_MANIFEST.json.",
   "current_source_manifest": "SOURCE_MANIFEST.json",
   "inventory_exclusions": "This review inventory and SOURCE_MANIFEST.json exclude their own/recursive manifest bytes; full current repository file identities are in SOURCE_MANIFEST.json and external batch report.",
-  "current_material_cleanup": "Only actual current files inventoried; source-only original design licenses/notice copies removed. Genuine distributed third-party material remains attributed."
+  "current_material_cleanup": "Only actual current files inventoried; source-only original design licenses/notice copies removed. Genuine distributed third-party material remains attributed.",
+  "package_sync_20261005": "The runtime version metadata entry is current; other provenance rows retain their original historical review scope."
 }

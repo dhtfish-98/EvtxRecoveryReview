@@ -2,7 +2,7 @@
 
 # EvtxRecoveryReview
 
-Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.2**. Upstream authors and reused components retain their original attribution.
+Current implementation author and maintainer: **dhtfish98**. Current package version: **0.1.3**. Upstream authors and reused components retain their original attribution.
 
 
 Offline defensive review of displaced EVTX chunks and orphan records in a local

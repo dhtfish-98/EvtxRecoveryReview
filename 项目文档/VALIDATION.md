@@ -1,3 +1,7 @@
+## Current release 0.1.3: package and documentation layout sync, 2026-10-05
+
+This patch release binds the current source and package metadata to the centralized 项目文档 and Build layout. Runtime behavior is unchanged from the previous main commit except version identifiers. The complete existing third-party licenses and provenance notices remain in scope. Historical tests below retain their original version and date; exact current build, installed-consumer and hosted-CI results are recorded separately with the release. CVP eligibility and applicant approval remain OPEN.
+
 # Current licensing validation — 0.1.2
 
 This patch removes only 2 confirmed unused complete reference-license/notice copies. New implementation author remains dhtfish98. Runtime parsing and evidence interpretation are unchanged; runtime changes are package version constants and any existing version display. The new source suite ran **124 unittest methods with nonzero PASS**. Current source identities are in SOURCE_MANIFEST.json, and LICENSE_CLEANUP.json describes the exact licensing boundary. Wheel and sdist reconstruction, fresh isolated consumer tests, CLI contracts, runtime/notice byte identity and package metadata are independently bound to the new assets in the batch release records; source tests alone do not prove those outcomes. New hosted CI and publication remain separate observations.
